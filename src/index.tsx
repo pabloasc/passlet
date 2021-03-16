@@ -1,15 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import store from './store'
+import React from "react";
+import ReactDOM from "react-dom";
+import { FirebaseProvider } from "./auth/FirebaseProvider";
+import { UserProvider } from "./auth/UserContext";
 
-import './index.css'
+import "./index.css";
 
-import App from './App'
+import App from "./App";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
+    <FirebaseProvider>
+        <UserProvider>
+            <App />
+        </UserProvider>
+    </FirebaseProvider>,
+    document.getElementById("root")
+);

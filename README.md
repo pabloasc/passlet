@@ -55,10 +55,6 @@ The template provides basic Redux configuration with [feature based](https://red
 
 Testing is done with [Enzyme](https://airbnb.io/enzyme/).
 
-## [Prettier](https://prettier.io/)
-
-I added `prettier` to force consistent formatting. Don't like trailing semicolons? Feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside `.prettierrc` file to match your code style.
-
 ## Styles/CSS/Styling
 
 Just for the styling purpose of the example app, I used [Materialize](https://materializecss.com/). The template is shipped with the Materialize by default. I want to make sure that this template is style agnostic so you can plugin any CSS-in-JS or whatever library/framework you want to use for styles on your own.
